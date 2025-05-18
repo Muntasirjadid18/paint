@@ -4,54 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Daisi UI -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <!-- Tailwind Css -->
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<!-- Google font -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <style>
-
-    .font-roboto {
-        font-family: "Roboto", sans-serif;
-      }
+  .font-roboto {
+  font-family: "Roboto", sans-serif;
+}
 </style>
 </head>
-<body>
-  <main class="max-h-screen-lg mx-auto ">
-    <section class="bg-[#FEEDBC] p-4 pt-5">
+<body class="font-roboto max-w-screen-2xl mx-auto">
+  <header class="bg-[#FEEDBC] px-12 pt-10 lg:px-20">
         <!-- btn section -->
-
-        <button class=" lg:flex  lg:mx-auto  px-50 lg:px-100 rounded-2xl bg-white border-hidden
-              btn btn-primary">
-            <img class=" w-15" src="/images/paint-logo.jpg" alt=""></button>
-     <!-- section1 -->
-      <div class="lg:flex lg:justify-between">
-        <!-- content -->
-        <div>
-          <h4 class="m-4 uppercase font-semibold lg:text-2xl text-xl text-[#F9B800]">risus praesent vulputate.</h4>
-          <h1 class="m-2 lg:text-5xl text-3xl font-bold">Cursus Integer
-           <br> Consequat Tristique.|</h1>
-            <!-- btn-section -->
-            <div class="m-4 gap-3 grid grid-cols-1 lg:grid-cols-2">
-                <button class="text-black mx-auto px-8 rounded-2xl bg-white border-hidden
-                btn btn-primary"><img src="/images/icon-tick.jpg" alt="">Cursus Integer</button>
-                <button class="text-black mx-auto px-8 rounded-2xl bg-white border-hidden
-                btn btn-primary"><img src="/images/icon-tick.jpg" alt="">Integer Consequat </button>
-                <button class="text-black mx-auto px-8 rounded-2xl bg-white border-hidden
-                btn btn-primary"><img src="/images/icon-tick.jpg" alt="">Cursus Integer</button>
-                <button class="text-black mx-auto px-8 rounded-2xl bg-white border-hidden
-                btn btn-primary"><img src="/images/icon-tick.jpg" alt="">Cursus Integer</button>
+        <div class="bg-white rounded-full px-12 py-4  lg:text-center">
+            <img class="max-w-18 inline-block" src="/images/paint-logo.jpg" alt=""></button>
             </div>
-             <button class="m-8 bg-[#F9B800] border-hidden text-black rounded-2xl  btn btn-primary">Primary</button>
+     <!-- banner section -->
+      <div class="pb-20 md:flex flex-row-reverse items-center ">
+         <div class="flex-1 md:w-1/2">
+        <img src="./images/cover-paint.jpg" alt="">
         </div>
-        <!-- Images -->
+        <div  class="flex-1 md:w-1/2">
         <div>
-         <img class="w-full h-3/4" src="/images/cover-paint.jpg
-         " alt="">
-        </div>
-      </div>
-    </section>
-</main>
+ <h2 class="uppercase font-bold text-[#F9B800] text-xl lg:text-2xl">risus praesent vulputate.</h2>
+ <h2 class="font-bold text-4xl text-[#262626] lg:text-5xl  "> Integer Consequat Tristique.|</h2>
+ </div>
+ <div class="container flex flex-col  gap-y-4 my-10  my-8 lg:flex-row gap-x-4 flex-wrap">
+ <!-- badge-1 -->
+  <div class="rounded-full bg-white max-w-60 px-4 py-2 flex flex-row items-center gap-x-2 ">
+<img src="./images/icon-tick.jpg" alt="">
+<span class="text-[#262626] font-medium">Cursus Integer</span>
+  </div>
+  <!-- badge-2 -->
+    <div class="rounded-full bg-white max-w-60 px-4 py-2 flex flex-row items-center gap-x-2 ">
+<img src="./images/icon-tick.jpg" alt="">
+<span class="text-[#262626] font-medium">Integer Consequat</span>
+  </div>
+  <!-- badge-3 -->
+    <div class="rounded-full bg-white max-w-80 px-4 py-2 flex flex-row items-center gap-x-2 ">
+<img src="./images/icon-tick.jpg" alt="">
+<span class="text-[#262626]  font-medium">Tellus Euismod Pellentesque</span>
+  </div>
+  <!-- badge-4 -->
+    <div class="rounded-full bg-white max-w-60 px-4 py-2 flex flex-row items-center gap-x-2 ">
+<img src="./images/icon-tick.jpg" alt="">
+<span class="text-[#262626] font-medium">Aliquot Tristique</span>
+  </div>
+</div>
+<!-- Button -->
+ <div><button class="btn bg-[#F9B800] rounded-full p-6 text-[#262626] font-bold text-[16px]">Lorem Ipsum <span class="ml-10"> <img src="./images/right-arrow.png" alt=""></span> </button></div>
+</div>
+</div>
+       
+      
+      </header>
 </body>
 </html>
